@@ -1,0 +1,46 @@
+package Queues;
+
+import java.util.LinkedList;
+
+import java.util.Queue;
+
+public class TodayQueue {
+	public static void main(String... args) {
+		Queue<Integer> numbers = new LinkedList<>();
+	
+		Queue<String> name  = new LinkedList<>();
+	
+	
+	    numbers.offer(1);
+	    numbers.offer(2);
+	    numbers.offer(3);
+	    name.offer("surya");
+	    name.offer("vimalK");
+	    name.offer("sanjay");
+	    name.offer("siva");
+	    
+	    System.out.println("Queue: " + numbers);
+
+	    int removedNumber = numbers.poll();
+	    System.out.println("Removed Element: " + removedNumber);
+
+	    System.out.println("Queue after deletion: " + numbers);
+	    
+	    System.out.println("Queue: " + name);
+	    
+	    String peekname = name.peek();
+	    System.out.println("PeekName: " + peekname);
+	    
+	    System.out.println("After Queue : " + name);
+	    
+	    
+	    int sizeofnumber = numbers.size();
+	    int sizeofstring = name.size();
+	    System.out.println("Size of the Queue after removing number: "+sizeofnumber);
+	    System.out.println("Size of the String Queue : "+sizeofstring);
+	    String string = name.element();
+	    System.out.println("Elemented String: "+string);
+	    
+	}
+
+}
